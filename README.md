@@ -1,50 +1,16 @@
-\# ATL Productivity Suite (v1.3.0)
+\# ATL Productivity Suite (v1.4.0)
 
-\*\*Developed by:\*\* Krishna Kumar, Accessible Tech Labs India (ATL India)
+\*\*Engineered by:\*\* Krishna Kumar, Accessible Tech Labs India (ATL India)  
 
+\*\*License:\*\* GNU General Public License v2.0  
 
-
-\## Introduction
-
-The ATL Productivity Suite is a premium, accessibility-first toolkit engineered specifically for NVDA users. This suite centralizes essential system management, automation, and navigation tools into a single, high-performance interface. Every feature is optimized for screen reader compatibility, ensuring a seamless and efficient workflow for power users and professionals.
+\*\*Compatibility:\*\* NVDA 2021.1 to 2026.1  
 
 
 
-\---
+\## 🌐 Enterprise-Grade Accessibility Toolkit
 
-
-
-\## Key Features
-
-
-
-\### 1. System Health Dashboard
-
-This module provides a comprehensive overview of your computer's vital statistics in real-time. It monitors CPU performance, RAM availability, and disk health, presenting the data in a clear, screen-reader-friendly format. Designed for users who need to ensure their hardware is operating within safe parameters, it eliminates the need to navigate complex system settings, offering all critical health data through a dedicated NVDA shortcut.
-
-
-
-\### 2. Automated System Cleaner
-
-The System Cleaner is a high-performance utility engineered to reclaim valuable storage space and improve overall system responsiveness. It targets redundant Windows temporary files, prefetch data, and browser caches for both Google Chrome and Microsoft Edge. By automating the removal of digital clutter that often accumulates and slows down system operations, users can maintain a lean and fast computing environment without manually searching through hidden directories.
-
-
-
-\### 3. Quick Launcher (10 Customizable Slots)
-
-This module empowers users to bridge the gap between their most-used applications, complex folder structures, and essential web URLs. With 10 customizable slots, you can map any digital path to an intuitive NVDA+Windows keyboard shortcut. It is specifically built to bypass deep file trees and multi-step browser navigation, significantly boosting productivity for professionals who require instant access to their project environments and resources.
-
-
-
-\### 4. Advanced Power Scheduler
-
-The Power Scheduler offers sophisticated automation for system power actions, including Shutdown, Restart, and Sleep. Unlike native Windows tools, it features a professional audio-guided notification system that warns the user minutes before the action takes place. This ensures ample time to save ongoing work and close applications safely, providing a reliable safety net for users who manage time-sensitive tasks or long-running system processes.
-
-
-
-\### 5. Google Quick Search \& File Reader
-
-These integrated utilities streamline information retrieval and document review. Google Quick Search allows for instant web queries or direct URL navigation from a simple dialog, while the Text File Reader provides a streamlined, distraction-free environment for reviewing .txt documents. Together, they minimize window switching and provide a focused workflow, allowing the user to stay within their primary task environment.
+The \*\*ATL Productivity Suite\*\* is a flagship, premium-tier global plugin engineered specifically for NVDA screen reader users. Designed for visually impaired professionals, developers, and power users, this suite centralizes 9 essential system utilities into a single, high-performance environment. It bypasses complex Windows visual hierarchies, putting system health diagnostics, enterprise security scanning, and workflow automation directly at your fingertips.
 
 
 
@@ -52,15 +18,147 @@ These integrated utilities streamline information retrieval and document review.
 
 
 
-\## Keyboard Shortcuts
+\## 🚀 What's New in Version 1.4.0 (Major Update)
 
-\* \*\*NVDA+Shift+M\*\*: Open ATL Master Menu
+Version 1.4 represents a massive architectural overhaul. We have transitioned from a single-script utility into a highly scalable, modular application designed for absolute stability and speed.
 
-\* \*\*NVDA+Windows+\[0-9]\*\*: Launch Quick Launcher Slots 0-9
 
-\* \*\*NVDA+Shift+C\*\*: Open System Cleaner
 
-\* \*\*NVDA+Shift+H\*\*: Open Health Dashboard
+\* \*\*Modular Code Architecture:\*\* The entire codebase has been refactored. Every utility now operates within its own isolated Python module. This drastically reduces memory consumption, enhances execution speed, and prevents cross-module interference.
 
-\* \*\*NVDA+Shift+P\*\*: Open Power Manager
+\* \*\*ATL Sentinel Security Scanner:\*\* A brand-new, enterprise-grade integration with the VirusTotal API. Scan local files (up to 650 MB) or any web URL against 70+ top-tier antivirus engines directly via NVDA.
+
+\* \*\*ATL Precision Stopwatch:\*\* A flawless, highly accurate, and fully accessible stopwatch utility for precise time-tracking of tasks, coding sessions, or examinations.
+
+\* \*\*Intelligent Opt-In Telemetry:\*\* A privacy-first, real-time analytics engine equipped with offline-sync capabilities. It tracks 100% anonymous feature usage to help us improve the suite. \*\*No personal data or file names are ever collected.\*\*
+
+\* \*\*Advanced System Cleaner Upgrade:\*\* The cleaner now intelligently requests Administrative privileges for deep-cleaning operations, giving users total secure control over Windows Temp, Prefetch, and Browser cache deletions.
+
+\* \*\*Power Manager Cooldown Protocol:\*\* To prevent system crashes from accidental consecutive inputs, a strict 5-minute safety cooldown has been implemented for all power scheduling tasks.
+
+\* \*\*Premium Audio Notifications:\*\* Integrated high-fidelity, custom audio cues for Power Manager executions and system alerts, providing a seamless native-system feel.
+
+\* \*\*Deprecation Notice:\*\* The \*Text File Reader\* module has been permanently removed to streamline the addon and reduce binary footprint, as modern native editors already provide robust accessibility.
+
+
+
+\---
+
+
+
+\## ⚙️ Core Features \& Capabilities
+
+
+
+\### 1. ATL Sentinel Security Scanner
+
+Visually impaired users often face barriers when navigating cluttered antivirus software. Sentinel bridges this gap. Instantly verify the safety of any file or domain using enterprise-grade threat intelligence. It provides a clean, easily readable diagnostic report confirming whether a target is Malicious, Suspicious, or Safe.
+
+
+
+\### 2. System Health Dashboard
+
+Gain immediate auditory insight into your computer’s real-time performance. With a single command, receive a precise diagnostic readout of your current CPU processing load, available RAM, and exact battery percentage, ensuring your hardware operates at peak efficiency.
+
+
+
+\### 3. Advanced System Cleaner
+
+Digital clutter significantly slows down screen reader response times. This robust utility automates the safe removal of redundant Windows temporary files, application junk, and caches from Google Chrome and Microsoft Edge, keeping your machine lightning-fast without manual directory hunting.
+
+
+
+\### 4. Smart Quick Launcher (10 Slots)
+
+Accelerate your workflow by mapping your most frequently used desktop applications, specific folder paths, or important web URLs to 10 dedicated numbered slots. Execute your targets instantly using `NVDA+Windows+0-9`, bypassing the Desktop and Start Menu entirely.
+
+
+
+\### 5. Power \& Alarm Manager
+
+Manage your time and machine states securely. The Alarm Manager offers precision scheduling with custom audio alerts. The Power Manager allows you to execute Restart, Shutdown, and Sleep commands with screen-reader-optimized dialogs and advanced crash-prevention logic.
+
+
+
+\### 6. Google Quick Search
+
+Eliminate the multi-step process of opening a browser to search. Trigger this command from anywhere in your OS, type your query, and hit enter. The addon automatically launches your default browser and fetches the search results securely.
+
+
+
+\### 7. Unified Master Menu
+
+A centralized, alphabetically sorted hub (`NVDA+Shift+M`) that houses all 9 utilities. If you forget a specific shortcut key, simply invoke the Master Command to access any tool instantly.
+
+
+
+\---
+
+
+
+\## ⌨️ Keyboard Shortcuts \& Gestures
+
+
+
+\### Master Commands
+
+\* \*\*Open ATL Master Menu:\*\* `NVDA + Shift + M`
+
+
+
+\### Direct Tool Execution
+
+\* \*\*Alarm Manager:\*\* `NVDA + Shift + A`
+
+\* \*\*Power Manager:\*\* `NVDA + Shift + P`
+
+\* \*\*System Health Dashboard:\*\* `NVDA + Shift + H`
+
+\* \*\*System Cleaner Menu:\*\* `NVDA + Shift + C`
+
+\* \*\*Google Quick Search:\*\* `NVDA + Shift + G`
+
+\* \*\*Quick Launcher Configuration:\*\* `NVDA + Shift + Q`
+
+\* \*\*About ATL Suite \& Help:\*\* `NVDA + Shift + O`
+
+
+
+\### Smart Quick Launcher
+
+\* \*\*Execute Slots 1 to 9:\*\* `NVDA + Windows + 1 to 9`
+
+\* \*\*Execute Slot 10 (0):\*\* `NVDA + Windows + 0`
+
+
+
+\*(Note: The ATL Sentinel Scanner and ATL Precision Stopwatch are accessed exclusively via the Master Menu.)\*
+
+
+
+\---
+
+
+
+\## 🤝 Support, Community \& Contact
+
+We are committed to continuous improvement and uncompromising accessibility. By using the ATL Productivity Suite, you join a global community of visually impaired professionals who value speed and efficiency.
+
+
+
+\* 🌐 \*\*Official Website:\*\* \[Accessible Tech Labs India](https://accessibletechlabsindia.github.io/)
+
+\* 📺 \*\*Video Tutorials:\*\* \[Watch the Full V1.4 Guide on YouTube](https://youtu.be/39MOUFFgb6M?si=yodeAJQ6JZJyGUrI)
+
+\* 💬 \*\*Telegram Community:\*\* \[Join Our Official Channel](https://telegram.me/+9hXlRWT6SVVhMjY9)
+
+\* 🟢 \*\*WhatsApp Support:\*\* \[Contact Developer Directly](https://wa.me/919352815634)
+
+\* 📧 \*\*Email (Gmail):\*\* kirshnakumar6644@gmail.com
+
+\* 📧 \*\*Email (Outlook):\*\* accessibletechlabsindia@outlook.com
+
+
+
+\*\*© 2026 Accessible Tech Labs India. Pioneering digital inclusion.\*\*
 

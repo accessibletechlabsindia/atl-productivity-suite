@@ -3,60 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATL Productivity Suite - Documentation</title>
+    <title>ATL Productivity Suite - Version 1.4 Documentation</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: auto; padding: 20px; background-color: #f4f7f9; }
         header { background: #004a99; color: #ffffff; padding: 30px; text-align: center; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         h1 { margin: 0; font-size: 2.5em; }
         h2 { color: #004a99; border-bottom: 2px solid #004a99; padding-bottom: 5px; margin-top: 30px; }
+        h3 { color: #d11010; margin-top: 20px; }
         .feature-card { background: white; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 5px solid #004a99; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .update-card { background: #eef2f7; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 5px solid #d11010; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
         code { background: #eef2f7; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #d11010; }
         ul { list-style-type: square; }
         footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #666; }
+        p { text-align: justify; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>ATL Productivity Suite</h1>
-    <p>Professional Accessibility Toolkit for NVDA</p>
+    <h1>ATL Productivity Suite v1.4</h1>
+    <p>The Enterprise-Grade Accessibility Toolkit for NVDA</p>
 </header>
 
 <h2>Overview</h2>
-<p>The <strong>ATL Productivity Suite</strong> is a premium, all-in-one efficiency toolkit developed by <strong>Accessible Tech Labs India</strong>. Specifically engineered for blind and visually impaired users, it integrates essential system utilities directly into the NVDA screen reader environment, eliminating the need for complex external software.</p>
+<p>The <strong>ATL Productivity Suite</strong> is a premium, all-in-one efficiency toolkit engineered by <strong>Accessible Tech Labs India</strong>. Specifically designed for blind and visually impaired professionals, it seamlessly integrates essential system utilities directly into the NVDA screen reader environment. Version 1.4 is a major architectural overhaul, transforming the addon from a basic utility script into a high-performance, enterprise-grade modular application. This update focuses on unparalleled stability, advanced security, intelligent resource management, and strict privacy compliance.</p>
+
+<div class="update-card">
+    <h2>What's New in Version 1.4 (Massive Update)</h2>
+    <p>Version 1.4 is our biggest release to date, bringing critical architectural improvements, entirely new enterprise-level features, and crucial bug fixes based on community feedback. Below is an in-depth breakdown of all the modifications.</p>
+
+    <h3>1. Brand New Feature: ATL Sentinel Security Scanner</h3>
+    <p>Visually impaired users often struggle to navigate complex and cluttered antivirus interfaces. To solve this, we have integrated an enterprise-grade security module powered by the industry-leading VirusTotal API. You can now instantly scan any local file (up to 650 MB) or suspicious web URL against more than 70 top-tier antivirus engines. It provides a clean, highly accessible, and easy-to-read safety report directly within NVDA, ensuring your system remains entirely secure from malware, ransomware, and phishing threats.</p>
+
+    <h3>2. Brand New Feature: ATL Precision Stopwatch</h3>
+    <p>A flawlessly accurate, fully accessible stopwatch utility tailored for professionals and students. Whether you need to track the time taken to compile a piece of code, time a mock examination, or monitor daily tasks, this tool provides seamless start, stop, and reading functionalities. It announces the elapsed time clearly, making time-tracking entirely independent, hassle-free, and accessible without visual reliance.</p>
+
+    <h3>3. Intelligent Telemetry & Strict Privacy Compliance</h3>
+    <p>To continually improve the ATL Suite, we have implemented a smart, real-time analytics system. <strong>Your privacy is our absolute priority.</strong> This system operates strictly on an opt-in basis; you will be prompted with a secure Yes/No dialog upon first execution. We guarantee that <strong>NO personal data, NO file names, NO PC identifiers, and NO browsing history are ever collected.</strong> We solely track anonymous usage statistics (e.g., which tool was launched) to help us prioritize feature development. Furthermore, the system is equipped with an offline-sync mechanism, ensuring that if you are disconnected from the internet, data is securely cached locally and synced seamlessly upon reconnection.</p>
+
+    <h3>4. Modular Code Architecture Restructuring</h3>
+    <p>In previous versions, core functionalities such as the Quick Launcher, System Cleaner, and Quick Search were all bundled within a single, massive core file. This led to performance bottlenecks and difficult maintenance. In Version 1.4, we have completely refactored the codebase. Every single utility now operates within its own dedicated, isolated Python module. The main plugin file now acts solely as a central dispatcher. This enterprise-level modularization drastically reduces memory consumption, enhances execution speed, prevents cross-module interference, and paves the way for seamless future updates.</p>
+
+    <h3>5. Advanced System Cleaner Enhancements</h3>
+    <p>The System Cleaner has received a critical logic upgrade. Previously, the cleaner would execute regardless of the NVDA privilege level, which could lead to permission errors. The tool now intelligently requests Administrative privileges when deep-cleaning system directories. This puts the power entirely in the user's hands—allowing for safe, user-authorized deep cleaning of Windows Temp folders, Prefetch data, and browser caches, ensuring maximum hygiene without risking system stability.</p>
+
+    <h3>6. Power Manager Safety Protocols & Audio Feedback</h3>
+    <p>We have introduced a strict "Cooldown Protocol" to the Power Manager. Previously, users could accidentally schedule multiple conflicting power tasks (e.g., Shutdown and Restart) within a five-minute window, potentially causing catastrophic system or NVDA crashes. The system now enforces a mandatory 5-minute safety gap between scheduled tasks, providing clear, professional audio warnings if a conflict is detected. Additionally, we have integrated a high-fidelity, custom notification tone. Whenever a power task executes or a notification is triggered, you will now hear a premium audio cue, providing a true native-system feel.</p>
+
+    <h3>7. Alarm Manager Bug Fixes</h3>
+    <p>We have resolved several underlying bugs within the Alarm Manager logic. The scheduling algorithm has been refined to ensure that alarms trigger with exact precision, and issues related to alarm deletion and modification have been completely eradicated, providing a flawless time-management experience.</p>
+
+    <h3>8. Revamped About Manager & Help Documentation</h3>
+    <p>The 'About' section has been entirely redesigned. It now includes comprehensive, 500+ character explanations for every feature, an integrated link to our official step-by-step YouTube video tutorial, and a dedicated section detailing every single shortcut and gesture. Furthermore, we have expanded our support channels, adding direct, accessible links to contact the developer via WhatsApp, Telegram, Outlook, and Gmail directly from the addon menu.</p>
+
+    <h3>9. Deprecation Notice: Text File Reader Removed</h3>
+    <p>Based on our user analytics and community feedback, the 'Accessible File Reader' feature has been entirely removed from the suite. The tool was deemed redundant due to the native capabilities of modern text editors like Notepad and Word. Removing it has further reduced the addon's footprint, making the entire suite significantly faster and leaner.</p>
+</div>
 
 <div class="feature-card">
-    <h2>Core Features</h2>
+    <h2>Core Utilities & Master Menu</h2>
     <ul>
-        <li><strong>System Health Dashboard:</strong> Real-time monitoring of CPU, RAM, and Battery health with audio feedback.</li>
-        <li><strong>Advanced System Cleaner:</strong> Deep-cleans Windows Temp, Prefetch, and Browser caches (Chrome/Edge) to optimize performance.</li>
-        <li><strong>Intelligent Quick Launcher:</strong> Map up to 10 favorite applications, folders, or web links to dedicated hotkeys (NVDA+Shift+0-9).</li>
-        <li><strong>Alarm & Power Manager:</strong> Set reminders and manage system power states (Shutdown, Restart, Sleep) via a simplified accessible menu.</li>
-        <li><strong>Google Quick Search:</strong> Instant web search or URL navigation directly through a convenient dialog box.</li>
-        <li><strong>Accessible File Reader:</strong> High-speed text file processing for seamless reading of large documents within a browseable window.</li>
+        <li><strong>System Health Dashboard:</strong> Real-time monitoring of CPU processing load, RAM availability, and precise battery status.</li>
+        <li><strong>Advanced System Cleaner:</strong> Deep-cleans system clutter with robust, user-authorized administrative execution.</li>
+        <li><strong>Smart Quick Launcher:</strong> Map up to 10 favorite applications, folders, or web links to dedicated hotkeys (NVDA+Windows+0-9) for instantaneous workflow acceleration.</li>
+        <li><strong>Alarm Manager:</strong> Precision scheduling utility with high-fidelity custom audio alerts.</li>
+        <li><strong>Power Manager:</strong> Securely execute Shutdown, Restart, and Sleep commands with advanced crash-prevention logic.</li>
+        <li><strong>Google Quick Search:</strong> Instant web search execution without manually opening a browser.</li>
+        <li><strong>ATL Sentinel Security Scanner:</strong> Scan local files and web URLs against 70+ antivirus engines.</li>
+        <li><strong>ATL Precision Stopwatch:</strong> Accessible time-tracking for any task.</li>
+        <li><strong>Unified Master Menu:</strong> A centralized, alphabetically sorted hub to access all tools seamlessly without memorizing individual shortcuts.</li>
     </ul>
 </div>
 
-<h2>Keyboard Shortcuts</h2>
+<h2>Keyboard Shortcuts & Gestures</h2>
 <table style="width:100%; border-collapse: collapse; background: white;">
     <tr style="background: #004a99; color: white;">
-        <th style="padding: 10px; border: 1px solid #ccc;">Action</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Action / Tool</th>
         <th style="padding: 10px; border: 1px solid #ccc;">Shortcut</th>
     </tr>
-    <tr><td style="padding: 10px; border: 1px solid #ccc;">Open Master Menu</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+M</code></td></tr>
+    <tr><td style="padding: 10px; border: 1px solid #ccc;">Open ATL Master Menu</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+M</code></td></tr>
+    <tr><td style="padding: 10px; border: 1px solid #ccc;">Alarm Manager</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+A</code></td></tr>
+    <tr><td style="padding: 10px; border: 1px solid #ccc;">Power Manager</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+P</code></td></tr>
+    <tr><td style="padding: 10px; border: 1px solid #ccc;">System Health Dashboard</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+H</code></td></tr>
     <tr><td style="padding: 10px; border: 1px solid #ccc;">System Cleaner Menu</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+C</code></td></tr>
-    <tr><td style="padding: 10px; border: 1px solid #ccc;">Quick Search</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+G</code></td></tr>
-    <tr><td style="padding: 10px; border: 1px solid #ccc;">Health Dashboard</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+H</code></td></tr>
-    <tr><td style="padding: 10px; border: 1px solid #ccc;">Configure Launcher</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+Q</code></td></tr>
-    <tr><td style="padding: 10px; border: 1px solid #ccc;">Date and Time</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+T</code></td></tr>
+    <tr><td style="padding: 10px; border: 1px solid #ccc;">Google Quick Search</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+G</code></td></tr>
+    <tr><td style="padding: 10px; border: 1px solid #ccc;">Quick Launcher Config</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+Q</code></td></tr>
+    <tr><td style="padding: 10px; border: 1px solid #ccc;">About ATL Suite & Help</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Shift+O</code></td></tr>
+    <tr><td style="padding: 10px; border: 1px solid #ccc;">Execute Quick Launcher Slots 1 to 9</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Windows+1 to 9</code></td></tr>
+    <tr><td style="padding: 10px; border: 1px solid #ccc;">Execute Quick Launcher Slot 10 (0)</td><td style="padding: 10px; border: 1px solid #ccc;"><code>NVDA+Windows+0</code></td></tr>
 </table>
+<p><em>Note: The ATL Precision Stopwatch and ATL Sentinel Security Scanner are accessible exclusively via the Master Menu (NVDA+Shift+M).</em></p>
 
 <h2>Installation & Support</h2>
-<p>To install, simply run the <code>.nvda-addon</code> file and follow the NVDA installation prompts. For technical support or contributions, visit our official repository or website.</p>
+<p>To install, simply run the <code>atl_productivity_suite_1.4.0.nvda-addon</code> file and follow the standard NVDA installation prompts. The tool requires a minimum NVDA version of 2021.1 and has been fully tested on the latest NVDA 2026.1 releases.</p>
 
 <footer>
-    <p>© 2026 Accessible Tech Labs India. Empowering through Accessibility.</p>
-    <p>Website: <a href="https://github.com/AccessibleTechLabsIndia">Accessible Tech Labs India</a></p>
+    <p>© 2026 Accessible Tech Labs India. All Rights Reserved.</p>
+    <p>Pioneering digital inclusion and uncompromising accessibility.</p>
+    <p><a href="https://accessibletechlabsindia.github.io/">Visit Official Website</a> | <a href="https://www.youtube.com/channel/UCMEfIGRzJdBMYqWVaUhEnFw">YouTube Tutorials</a> | <a href="https://t.me/+919352815634">Join Telegram Community</a></p>
 </footer>
 
 </body>
