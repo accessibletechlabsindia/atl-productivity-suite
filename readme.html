@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATL Productivity Suite - Version 1.4 Documentation</title>
+    <title>ATL Productivity Suite - Version 1.5 Documentation</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: auto; padding: 20px; background-color: #f4f7f9; }
         header { background: #004a99; color: #ffffff; padding: 30px; text-align: center; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -21,43 +21,37 @@
 <body>
 
 <header>
-    <h1>ATL Productivity Suite v1.4</h1>
+    <h1>ATL Productivity Suite v1.5</h1>
     <p>The Enterprise-Grade Accessibility Toolkit for NVDA</p>
 </header>
 
 <h2>Overview</h2>
-<p>The <strong>ATL Productivity Suite</strong> is a premium, all-in-one efficiency toolkit engineered by <strong>Accessible Tech Labs India</strong>. Specifically designed for blind and visually impaired professionals, it seamlessly integrates essential system utilities directly into the NVDA screen reader environment. Version 1.4 is a major architectural overhaul, transforming the addon from a basic utility script into a high-performance, enterprise-grade modular application. This update focuses on unparalleled stability, advanced security, intelligent resource management, and strict privacy compliance.</p>
+<p>The <strong>ATL Productivity Suite</strong> is a premium, all-in-one efficiency toolkit engineered by <strong>Accessible Tech Labs India</strong>. Specifically designed for blind and visually impaired professionals, it seamlessly integrates essential system utilities directly into the NVDA screen reader environment. Version 1.5 introduces a high-speed unified master database layout, ensuring unparalleled stability, advanced security, intelligent resource management, and strict privacy compliance.</p>
 
 <div class="update-card">
-    <h2>What's New in Version 1.4 (Massive Update)</h2>
-    <p>Version 1.4 is our biggest release to date, bringing critical architectural improvements, entirely new enterprise-level features, and crucial bug fixes based on community feedback. Below is an in-depth breakdown of all the modifications.</p>
+    <h2>What's New in Version 1.5 (Performance & Architecture Update)</h2>
+    <p>Version 1.5 focuses on core engine optimization and complete compatibility with the latest NVDA security patches, alongside our existing suite of premium features.</p>
 
-    <h3>1. Brand New Feature: ATL Sentinel Security Scanner</h3>
-    <p>Visually impaired users often struggle to navigate complex and cluttered antivirus interfaces. To solve this, we have integrated an enterprise-grade security module powered by the industry-leading VirusTotal API. You can now instantly scan any local file (up to 650 MB) or suspicious web URL against more than 70 top-tier antivirus engines. It provides a clean, highly accessible, and easy-to-read safety report directly within NVDA, ensuring your system remains entirely secure from malware, ransomware, and phishing threats.</p>
+    <h3>1. Unified Master Database Architecture</h3>
+    <p>We have completely restructured the backend configuration system. By migrating multiple disparate settings files into a single, high-speed unified master JSON database, the addon now loads instantly, consumes significantly less memory, and executes tasks with zero latency.</p>
 
-    <h3>2. Brand New Feature: ATL Precision Stopwatch</h3>
-    <p>A flawlessly accurate, fully accessible stopwatch utility tailored for professionals and students. Whether you need to track the time taken to compile a piece of code, time a mock examination, or monitor daily tasks, this tool provides seamless start, stop, and reading functionalities. It announces the elapsed time clearly, making time-tracking entirely independent, hassle-free, and accessible without visual reliance.</p>
+    <h3>2. Verified NVDA 2026.1.1 Compatibility</h3>
+    <p>Ensured seamless integration and absolute stability with the latest NVDA 2026.1.1 security patches, guaranteeing an uninterrupted and secure user experience.</p>
 
-    <h3>3. Intelligent Telemetry & Strict Privacy Compliance</h3>
-    <p>To continually improve the ATL Suite, we have implemented a smart, real-time analytics system. <strong>Your privacy is our absolute priority.</strong> This system operates strictly on an opt-in basis; you will be prompted with a secure Yes/No dialog upon first execution. We guarantee that <strong>NO personal data, NO file names, NO PC identifiers, and NO browsing history are ever collected.</strong> We solely track anonymous usage statistics (e.g., which tool was launched) to help us prioritize feature development. Furthermore, the system is equipped with an offline-sync mechanism, ensuring that if you are disconnected from the internet, data is securely cached locally and synced seamlessly upon reconnection.</p>
+    <h3>3. ATL Sentinel Security Scanner</h3>
+    <p>Visually impaired users often struggle to navigate complex and cluttered antivirus interfaces. To solve this, we have integrated an enterprise-grade security module powered by the industry-leading VirusTotal API. You can now instantly scan any local file (up to 650 MB) or suspicious web URL against more than 70 top-tier antivirus engines.</p>
 
-    <h3>4. Modular Code Architecture Restructuring</h3>
-    <p>In previous versions, core functionalities such as the Quick Launcher, System Cleaner, and Quick Search were all bundled within a single, massive core file. This led to performance bottlenecks and difficult maintenance. In Version 1.4, we have completely refactored the codebase. Every single utility now operates within its own dedicated, isolated Python module. The main plugin file now acts solely as a central dispatcher. This enterprise-level modularization drastically reduces memory consumption, enhances execution speed, prevents cross-module interference, and paves the way for seamless future updates.</p>
+    <h3>4. ATL Precision Stopwatch</h3>
+    <p>A flawlessly accurate, fully accessible stopwatch utility tailored for professionals and students. Whether you need to track the time taken to compile a piece of code or monitor daily tasks, it announces the elapsed time clearly, making time-tracking entirely independent.</p>
 
-    <h3>5. Advanced System Cleaner Enhancements</h3>
-    <p>The System Cleaner has received a critical logic upgrade. Previously, the cleaner would execute regardless of the NVDA privilege level, which could lead to permission errors. The tool now intelligently requests Administrative privileges when deep-cleaning system directories. This puts the power entirely in the user's hands—allowing for safe, user-authorized deep cleaning of Windows Temp folders, Prefetch data, and browser caches, ensuring maximum hygiene without risking system stability.</p>
+    <h3>5. Intelligent Telemetry & Strict Privacy Compliance</h3>
+    <p>To continually improve the ATL Suite, we have implemented a smart, real-time analytics system. <strong>Your privacy is our absolute priority.</strong> This system operates strictly on an opt-in basis. We guarantee that <strong>NO personal data, NO file names, NO PC identifiers, and NO browsing history are ever collected.</strong></p>
 
-    <h3>6. Power Manager Safety Protocols & Audio Feedback</h3>
-    <p>We have introduced a strict "Cooldown Protocol" to the Power Manager. Previously, users could accidentally schedule multiple conflicting power tasks (e.g., Shutdown and Restart) within a five-minute window, potentially causing catastrophic system or NVDA crashes. The system now enforces a mandatory 5-minute safety gap between scheduled tasks, providing clear, professional audio warnings if a conflict is detected. Additionally, we have integrated a high-fidelity, custom notification tone. Whenever a power task executes or a notification is triggered, you will now hear a premium audio cue, providing a true native-system feel.</p>
+    <h3>6. Advanced System Cleaner Enhancements</h3>
+    <p>The tool intelligently requests Administrative privileges when deep-cleaning system directories. This puts the power entirely in the user's hands—allowing for safe, user-authorized deep cleaning of Windows Temp folders, Prefetch data, and browser caches.</p>
 
-    <h3>7. Alarm Manager Bug Fixes</h3>
-    <p>We have resolved several underlying bugs within the Alarm Manager logic. The scheduling algorithm has been refined to ensure that alarms trigger with exact precision, and issues related to alarm deletion and modification have been completely eradicated, providing a flawless time-management experience.</p>
-
-    <h3>8. Revamped About Manager & Help Documentation</h3>
-    <p>The 'About' section has been entirely redesigned. It now includes comprehensive, 500+ character explanations for every feature, an integrated link to our official step-by-step YouTube video tutorial, and a dedicated section detailing every single shortcut and gesture. Furthermore, we have expanded our support channels, adding direct, accessible links to contact the developer via WhatsApp, Telegram, Outlook, and Gmail directly from the addon menu.</p>
-
-    <h3>9. Deprecation Notice: Text File Reader Removed</h3>
-    <p>Based on our user analytics and community feedback, the 'Accessible File Reader' feature has been entirely removed from the suite. The tool was deemed redundant due to the native capabilities of modern text editors like Notepad and Word. Removing it has further reduced the addon's footprint, making the entire suite significantly faster and leaner.</p>
+    <h3>7. Power Manager Safety Protocols</h3>
+    <p>We have introduced a strict "Cooldown Protocol" to the Power Manager. The system now enforces a mandatory 5-minute safety gap between scheduled tasks, providing clear, professional audio warnings if a conflict is detected.</p>
 </div>
 
 <div class="feature-card">
@@ -95,7 +89,7 @@
 <p><em>Note: The ATL Precision Stopwatch and ATL Sentinel Security Scanner are accessible exclusively via the Master Menu (NVDA+Shift+M).</em></p>
 
 <h2>Installation & Support</h2>
-<p>To install, simply run the <code>atl_productivity_suite_1.4.0.nvda-addon</code> file and follow the standard NVDA installation prompts. The tool requires a minimum NVDA version of 2021.1 and has been fully tested on the latest NVDA 2026.1 releases.</p>
+<p>To install, simply run the <code>atl_productivity_suite_1.5.0.nvda-addon</code> file and follow the standard NVDA installation prompts. The tool requires a minimum NVDA version of 2021.1 and has been fully tested on the latest NVDA 2026.1.1 releases.</p>
 
 <footer>
     <p>© 2026 Accessible Tech Labs India. All Rights Reserved.</p>
